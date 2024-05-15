@@ -1,4 +1,4 @@
-const API_KEY = "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";
+const API_KEY = "sk-proj-eesHYpIfDPTehgalgsMkT3BlbkFJs9nQ6NWXM8iyINLkBrom";
 const submitButton = document.querySelector('#submit');
 const mainSection = document.querySelector('.main');
 const inputElement = document.querySelector('#userInput');
@@ -30,7 +30,7 @@ async function getMessage() {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model: "gpt-4-0125-preview",
+        model: "gpt-4o",
         messages: conversationHistory.map(({ role, content }) => ({ role, content })),
         max_tokens: 100
       })
